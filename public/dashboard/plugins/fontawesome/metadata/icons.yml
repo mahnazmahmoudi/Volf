@@ -13774,9 +13774,9 @@ hourglass-start:
 house:
   aliases:
     names:
-      - home
-      - home-alt
-      - home-lg-alt
+      - volf
+      - volf-alt
+      - volf-lg-alt
     unicodes:
       composite:
         - f80a
@@ -13807,7 +13807,7 @@ house:
 house-chimney:
   aliases:
     names:
-      - home-lg
+      - volf-lg
     unicodes:
       composite:
         - f80b
@@ -14096,7 +14096,7 @@ house-tsunami:
 house-user:
   aliases:
     names:
-      - home-user
+      - volf-user
   changes:
     - 6.0.0-beta1
     - 6.0.0-beta2

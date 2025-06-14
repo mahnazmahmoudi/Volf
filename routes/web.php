@@ -16,7 +16,7 @@ Route::prefix('admin')->group(function () {
 
 /* Home Layout */
 Route::group([], function () {
-    Route::get('/', [HomeController::class, 'index'])->name('home.index');
+    Route::get('/', [HomeController::class, 'home'])->name('volf');
     Route::get('services/{service:slug}', [HomeController::class, 'singleService'])->name('single.service');
     Route::get('contact', [HomeController::class, 'contact'])->name('contact');
 

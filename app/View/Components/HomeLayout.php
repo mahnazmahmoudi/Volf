@@ -21,6 +21,6 @@ class HomeLayout extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.home-layout');
+        return view('components.volf-layout');
     }
 }

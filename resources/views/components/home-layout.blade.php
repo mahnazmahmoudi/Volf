@@ -7,16 +7,18 @@
     <title>Deconsult - Finance & Consulting HTML Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" href="{{ asset('home/assets/images/favicon.png') }}">
-    <link rel="shortcut icon" href="{{ asset('home/assets/images/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ asset('volf/assets/images/favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('volf/assets/images/favicon.ico') }}">
 
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('home/assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('home/assets/css/plugins.css') }}">
-    <link rel="stylesheet" href="{{ asset('home/assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('home/assets/css/custom.css') }}">
+   
+
+    <link rel="stylesheet" href="{{ asset('volf/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('volf/assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('volf/assets/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('volf/assets/css/plugins.css') }}">
 </head>
 
 <body>
@@ -50,13 +52,13 @@
             <div class="container">
                 <div class="header-bottominner">
                     <div class="header-logo">
-                        <a href="{{ route('home.index') }}">
-                            <img src="{{ asset('home/assets/images/logo/logo.png') }}" alt="deconsult logo">
+                        <a href="{{ route('volf.index') }}">
+                            <img src="{{ asset('volf/assets/images/logo/logo.png') }}" alt="deconsult logo">
                         </a>
                     </div>
                     <nav class="tm-navigation">
                         <ul>
-                            <li><a href="{{ route('home.index') }}">Home</a></li>
+                            <li><a href="{{ route('volf.index') }}">Home</a></li>
                             <li><a href="{{ route('single.service') }}">Services</a></li>
                             <li><a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
@@ -75,27 +77,29 @@
             </div>
         </div>
     </div>
-    <div class="tm-breadcrumb-area tm-padding-section text-center" data-overlay="1" data-bgimage="{{ asset('home/assets/images/bg/bg-breadcrumb.jpg') }}">
+    <div class="tm-breadcrumb-area tm-padding-section text-center" data-overlay="1" data-bgimage="{{ asset('volf/assets/images/bg/bg-breadcrumb.jpg') }}">
         <div class="container">
             <div class="tm-breadcrumb">
                 <h2 class="tm-breadcrumb-title">Service Details</h2>
                 <ul>
-                    <li><a href="{{ route('home.index') }}">Home</a></li>
+                    <li><a href="{{ route('volf.index') }}">Home</a></li>
                     <li><a href="{{ route('single.service') }}">Services</a></li>
                     <li>Financial Analysis</li>
                 </ul>
             </div>
         </div>
     </div>
+    <main class="page-content">
     {{ $slot }}
+    </main>
     <div class="footer fixed-footer">
-        <div class="footer-toparea tm-padding-section" data-bgimage="{{ asset('home/assets/images/bg/footer-bg.jpg') }}" data-overlay="2">
+        <div class="footer-toparea tm-padding-section" data-bgimage="{{ asset('volf/assets/images/bg/footer-bg.jpg') }}" data-overlay="2">
             <div class="container">
                 <div class="row widgets footer-widgets">
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="single-widget widget-info">
-                            <a href="{{ route('home.index') }}" class="widget-info-logo">
-                                <img src="{{ asset('home/assets/images/logo/logo-white.png') }}" alt="footer logo">
+                            <a href="{{ route('volf.index') }}" class="widget-info-logo">
+                                <img src="{{ asset('volf/assets/images/logo/logo-white.png') }}" alt="footer logo">
                             </a>
                             <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Rerum harum ipsum
                                 quibusdam quas qui ratione inventore dolore natus recusandae assumenda.</p>
@@ -119,7 +123,7 @@
                             <ul>
                                 <li>
                                     <a href="blog-details.html" class="widget-recentpost-image">
-                                        <img src="{{ asset('home/assets/images/blog/thumbnails/blog-thumbnail-1.jpg') }}" alt="blog thumbnail">
+                                        <img src="{{ asset('volf/assets/images/blog/thumbnails/blog-thumbnail-1.jpg') }}" alt="blog thumbnail">
                                     </a>
                                     <div class="widget-recentpost-content">
                                         <h6><a href="blog-details.html">Architecto earum maxime deleniti qui debitis</a></h6>
@@ -128,7 +132,7 @@
                                 </li>
                                 <li>
                                     <a href="blog-details.html" class="widget-recentpost-image">
-                                        <img src="{{ asset('home/assets/images/blog/thumbnails/blog-thumbnail-2.jpg') }}" alt="blog thumbnail">
+                                        <img src="{{ asset('volf/assets/images/blog/thumbnails/blog-thumbnail-2.jpg') }}" alt="blog thumbnail">
                                     </a>
                                     <div class="widget-recentpost-content">
                                         <h6><a href="blog-details.html">Minus omnis eos eaque illum dolo</a></h6>
@@ -137,7 +141,7 @@
                                 </li>
                                 <li>
                                     <a href="blog-details.html" class="widget-recentpost-image">
-                                        <img src="{{ asset('home/assets/images/blog/thumbnails/blog-thumbnail-3.jpg') }}" alt="blog thumbnail">
+                                        <img src="{{ asset('volf/assets/images/blog/thumbnails/blog-thumbnail-3.jpg') }}" alt="blog thumbnail">
                                     </a>
                                     <div class="widget-recentpost-content">
                                         <h6><a href="blog-details.html">Corporis eaque illum dolo</a></h6>
@@ -186,14 +190,14 @@
         </div>
     </div>
 </div>
-<script src="{{ asset('home/assets/js/modernizr-3.6.0.min.js') }}"></script>
-<script src="{{ asset('home/assets/js/jquery.min.js') }}"></script>
-<script src="{{ asset('home/assets/js/popper.min.js') }}"></script>
-<script src="{{ asset('home/assets/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('home/assets/js/plugins.js') }}"></script>
-<script src="{{ asset('home/assets/js/chart.min.js') }}"></script>
-<script src="{{ asset('home/assets/js/chart-active.js') }}"></script>
-<script src="{{ asset('home/assets/js/main.js') }}"></script>
+<script src="{{ asset('volf/assets/js/modernizr-3.6.0.min.js') }}"></script>
+<script src="{{ asset('volf/assets/js/jquery.min.js') }}"></script>
+<script src="{{ asset('volf/assets/js/popper.min.js') }}"></script>
+<script src="{{ asset('volf/assets/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('volf/assets/js/plugins.js') }}"></script>
+<script src="{{ asset('volf/assets/js/chart.min.js') }}"></script>
+<script src="{{ asset('volf/assets/js/chart-active.js') }}"></script>
+<script src="{{ asset('volf/assets/js/main.js') }}"></script>
 </body>
 
 </html>
