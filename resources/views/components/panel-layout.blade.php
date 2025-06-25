@@ -38,7 +38,7 @@
             </li>
             <li class="nav-item d-none d-sm-inline-block">
                 {{-- Assuming 'volf' is a general application volf route --}}
-                <a href="{{ route('volf.index') }}" class="nav-link">خانه</a>
+                <a href="" class="nav-link">خانه</a>
             </li>
         </ul>
         <ul class="navbar-nav mr-auto">

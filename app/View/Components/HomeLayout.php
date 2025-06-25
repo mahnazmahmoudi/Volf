@@ -2,18 +2,21 @@
 
 namespace App\View\Components;
 
+use App\Models\Service;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
 class HomeLayout extends Component
 {
+    public $services;
+
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        //
+        $this->services=Service::all();
     }
 
     /**
@@ -21,6 +24,6 @@ class HomeLayout extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.volf-layout');
+        return view('components.home-layout');
     }
 }

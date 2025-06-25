@@ -7,7 +7,8 @@ use App\Http\Controllers\HomeController;
 
 Route::prefix('admin')->group(function () {
     Route::get('/dashboard', [PanelController::class, 'index'])->name('admin.dashboard');
-    Route::resource('services', ServiceController::class);
+    Route::resource('services', ServiceController::class)->except(['show']);
+
 });
 
 
@@ -16,8 +17,8 @@ Route::prefix('admin')->group(function () {
 
 /* Home Layout */
 Route::group([], function () {
-    Route::get('/', [HomeController::class, 'home'])->name('volf');
-    Route::get('services/{service:slug}', [HomeController::class, 'singleService'])->name('single.service');
+    Route::get('/', [HomeController::class, 'home'])->name('home');
+    Route::get('services/{service:slug}', [HomeController::class, 'service'])->name('service');
     Route::get('contact', [HomeController::class, 'contact'])->name('contact');
 
 

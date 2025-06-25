@@ -24,7 +24,7 @@ class ServiceStoreRequest extends FormRequest
         return [
             'title' => ['required', 'string', 'unique:services'],
             'description' => ['required'],
-            'image' => ['required'],
+            'image' => ['nullable'],
         ];
     }
 }
